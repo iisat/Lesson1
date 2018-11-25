@@ -18,7 +18,7 @@ def count_substrings(s):
                 hashesarray.append(hash(s[i:j + 1]))
     return (len(hashesarray) - 2)
 
-# Используем словарь с хешем в качестве индекса
+# Используем словарь с хэшем в качестве индекса
 def mod_count_substrings(s):
     d = collections.OrderedDict()
     for i in range(0, len(s)):
@@ -40,4 +40,4 @@ print(mod_count_substrings(s))
 #cProfile.run('count_substrings(s)')             1    0.660    0.660    0.669    0.669 task1.py:16(count_substrings)
 #cProfile.run('mod_count_substrings(s)')         1    0.018    0.018    0.030    0.030 task1.py:25(mod_count_substrings)
 
-# Вывод: использование хешей в качестве индекса словаря - прекрасная идея
+# Вывод: использование хэшей в качестве индекса словаря - прекрасная идея
